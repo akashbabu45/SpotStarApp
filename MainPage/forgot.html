@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgot</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins",sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(../Images/back1.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            mix-blend-mode: 350px;
+           background-color: greenyellow;
+            padding: 30px 40px;
+            border-radius: 20px;
+        }
+       .para1{
+            padding: 10px;
+       }
+      .input-box{
+        padding: 10px;
+       
+      }
+      #input-box1{
+        width: 260px;
+        height: 35px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 15px;
+      }
+      .btn{
+        height: 35px;
+        width: 260px;
+        border-radius: 15px;
+      }
+      .reset-link a{
+        border: 2px  solid black;
+        height: 40px;
+       width: 130px;
+       text-decoration: none;
+       padding: 10px;
+       border-radius: 20px;
+       color: black;
+       background-color: lightslategrey;
+      }
+      .reset-link{
+        padding: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Forgot your password</h1>
+        <div class="para1">
+            <p>Please entire the email address you'd like your password 
+            reset information sent to </p>
+        </div>
+        <div class="input-box">
+            <label for="">Enter email address</label><br>
+            <input type="email" placeholder="Enter your email" required id="input-box1">
+        </div>
+        <div class="input-box">
+            <a href="./otp-2.html"><input type="button" value="Request reset link" class="btn"></a>
+        </div>
+        <div class="reset-link">
+            <a href="./index.html">Back To Login</a>
+        </div>
+        </form>
+    </div>   
+</body>
+</html>

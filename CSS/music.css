@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background: salmon;
+    width: 420px;
+    padding: 40px 40px;
+}
+.container h1{
+   
+    text-align: center;
+    font-size: 30px;
+}
+.container #head{
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+}
+#head img{
+    border-radius: 15px;
+    margin-left: 65px;
+    width: 65%;
+    height: 250px;
+}
+#head h2{
+    text-align: center;
+}
+.container .audio{
+    margin-top: 20px;
+}
+.container .audio a{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-decoration: none;
+}
+.container .audio a button{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+

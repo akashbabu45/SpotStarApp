@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "poppins",sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            margin: 70px; 
+            background-image: url(../Images/back7.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .main{
+            background-color: grey;
+            width: 420px;
+           height: 250px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+          
+        }
+        .inside{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 8px;
+        }
+      #inp{
+        height: 30px;
+        width: 300px;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+     .verify  #btn{
+        height: 33px;
+        width: 90px;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+      }
+    </style>
+</head>
+<body>
+   <div class="main">
+     <form action="">
+        <h1 class="head">SpotStar</h1>
+        <div class="inside">
+            <label for="" id="lab1">Enter OTP</label> <br>
+            <label for="" id="lab2">Check your Mobile for the OTP</label> <br>
+            <input type="text" id="inp">
+        </div>
+        <div class="verify">
+            <a href="./verify.html" ><input type="button" value="Verify OTP" id="btn"></button></a>
+        </div>
+     </form>
+   </div>
+</body>
+</html>

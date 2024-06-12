@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP-2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "poppins",sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(../Images/spotstar4.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .main{
+            width: 420px;
+            height: 280px;
+            background: orange;
+            color: black;
+            border-radius: 12px;
+            padding: 30px 40px 
+        }
+        .input-box p{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .input-box input{
+            padding-left: 20px;
+            width: 25%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            margin-left: 21px;
+            margin-top: 10px;
+            height: 35px;
+           width: 300px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+       .btn1{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-left: 80px;
+        height: 30px;
+        width: 80px;
+        cursor: pointer;
+        text-decoration: none;
+       }
+       .btn2{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: -30px;
+        margin-left: 180px;
+        height: 30px;
+        width: 80px;
+        cursor: pointer;
+       }
+       .verify a{
+        text-decoration: none;
+       }
+       .para{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            color: black;
+       }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="input-box">
+        <p>Enter your OTP</p> <br>
+        <input type="number" placeholder="Enter otp" id="user_otp"><br>
+    </div>
+    
+    <div class="verify">
+            <input type="submit" value="verify" class="btn1" onclick="otp_verify()">
+            <a href="./forgot.html"><input type="button" value="Cancel" class="btn2"></a>
+            <p id="error" class="para"></p>
+    </div>
+
+</div>
+
+    <script src="../otp.js"></script>
+</body>
+</html>

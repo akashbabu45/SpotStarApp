@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotStar</title>
+    <link rel="stylesheet" href="/CSS/nav.css">
+    <style>
+        body{ 
+            background-color: #4ea384;
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .img-gap{
+            transition: 0.4s;
+            border-radius: 10px; 
+            height: 250px;
+            width: 180px;
+            border-radius: 10px;
+        }
+        .con-img{
+        display: grid;
+         grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+         grid-gap: 20px;
+         margin-top: 20px;
+         padding-left: 20px;
+      }
+        #header{
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .top{
+            display: flex;
+             justify-content: start;
+             padding: 10px;
+             text-decoration: underline;
+             padding-left: 20px;
+        }
+        #title{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+        }
+        .select-opt{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+        }
+       .img-gap:hover{
+             cursor: pointer;
+             transform: scale(0.9);
+             box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+        }
+        #btn{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            padding: 30px;
+            color: blue;
+            transition: 0.5s;
+        }
+        #btn-input{
+            height: 35px;
+            width: 100px;
+            font-size: 20px;
+            border-radius: 15px;
+           
+        }
+        #btn-input:hover{
+            transform: scale(0.9);
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+           background: blue;
+        }
+        #select-item{
+            height: 30px;
+            width: 100px;
+            display: flex;
+            cursor: pointer;
+            transition: 0.5s;
+            border-radius: 15px;
+           text-align: center;
+        }
+        #select-item option:hover{
+            transition: 0.5s;
+            transform: 0.9;
+            box-shadow: rgba(0, 0, 0, 0.8);
+        }
+        .btn{
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    }
+    .btn:hover{
+        transform: scale(0.9);
+        box-shadow: rgba(0, 0, 0, 0.8);
+        background: blue;
+    }
+    
+     </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <span>SPOTSTAR</span>
+        <ul>
+            <li><a href="/MainPage/welcome.html">Home</a></li>
+            <li><a href="/Movie/Movies.html">Movie</a></li>
+            <li><a href="/MainPage/music.html">Music</a></li>
+            <li><a href="./Index.html">Logout</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+
+            <h2 id="title">MOVIE</h2>
+            <div class="select-opt">
+                <select name="links"  size="1" id="select-item">
+                    <option value="" class="input-box">Tamil</option> 
+                    <option value="" >Malayalam</option>
+                </select>
+               
+                <a href="./malayalam.html" class="btn-main"><input type="button" value="Next Page" class="btn"></input></a>
+
+            </div>
+         
+             <h1 class="top">Actor</h1>
+             <div class="con-img">
+                <div class="actor-img">
+                    <a href="../Movie/ajith.html"><img src="/Images/Actor/ajith1.jpg" class="img-gap" ></a>
+                    <h2>Ajith</h2>
+                </div> 
+                <div class="actor-img">
+                    <a href="../Movie/dhanush2.html"><img src="/Images/Movie/dhanush2.jpg" class="img-gap"></a>
+                    <h2>Dhanush</h2>
+                </div>
+                <div class="actor-img">
+                    <a href="../Movie/vijay2.html"><img src="/Images/Actor/vijay2.jpg" class="img-gap"></a>
+                    <h2>Vijay</h2>
+                </div>
+                <div class="actor-img">
+                    <a href="../Movie/simbu2.html"><img src="/Images/Movie/simbu3.jpg" class="img-gap"></a>
+                    <h2>Simbu</h2>
+                </div>
+                <div class="actor-img">
+                    <a href="../Movie/vikram2.html"><img src="/Images/Movie/chiyaan1.jpg" class="img-gap"></a>
+                    <h2>Vikram</h2>
+                </div>
+            </div>
+                
+        <h1 class="top">Director</h1>
+                <div class="con-img">  
+                    <div class="actor-img">
+                        <a href="../Movie_Director//Vetri.html"><img src="/Images/Movie/vetri.jpg" class="img-gap" ></a>
+                        <h2>Vetri Maaran</h2>
+                    </div> 
+                    <div class="actor-img">
+                       <a href="../Movie_Director/sankar.html"><img src="/Images/Movie/sankar2.jpg" class="img-gap"></a>
+                        <h2>Shankar</h2>
+                    </div>
+                    <div class="actor-img">
+                        <a href="../Movie_Director/atlee.html"><img src="/Images/Movie/atlee1.jpg" class="img-gap"></a>
+                        <h2>Atlee</h2>
+                    </div>
+                    <div class="actor-img">
+                        <a href="../Movie_Director/maniratnam.html"><img src="../Images/Movie/mani.jpg" class="img-gap"></a>
+                        <h2>maniratnam</h2>
+                    </div>
+                    <div class="actor-img">
+                        <a href="../Movie_Director/lokesh.html"><img src="/Images/Movie/loki.jpg" class="img-gap"></a>
+                        <h2>Lokesh Kanagaraj</h2>
+                    </div>
+                </div>
+                
+                    <h1 class="top">MOVIE</h1>
+    
+                 <div class="con-img">  
+                        <div class="actor-img">
+                            <a href="../trailer/vada_chennai.html"><img src="/Images/Movie/chennai.jpg" class="img-gap" ></a>
+                            <h2>Vada Chennai</h2>
+                        </div> 
+                        <div class="actor-img">
+                            <a href="../trailer/joe.html"><img src="/Images/Movie/fight.jpg" class="img-gap"></a>
+                            <h2>Fight Club</h2>
+                        </div>
+                        <div class="actor-img">
+                            <a href="../trailer/pathuthala.html"><img src="/Images/Movie/thala1.jpg" class="img-gap"></a>
+                            <h2>Pathu Thala</h2>
+                        </div>
+                        <div class="actor-img">
+                            <a href="../trailer/thunivu.html"><img src="/Images/Movie/thunivu.webp" class="img-gap"></a>
+                            <h2>Thunivu</h2>
+                        </div>
+                        <div class="actor-img">
+                            <a href="../trailer/vikram.html"><img src="/Images/Movie/kamal.jpg" class="img-gap"></a>
+                            <h2>Vikram</h2>
+                        </div>
+                 </div>
+
+            <a href="../MainPage/welcome.html"  id="btn"><input type="button" value="Back" id="btn-input"></a>
+       
+    </div>
+
+    <script src="/nav.js"></script>
+</body>
+</html>
